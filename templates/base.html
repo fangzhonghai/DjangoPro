@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static "css/mystyle.css" %}"/>
+    <meta charset="UTF-8">
+    <title>GRONS: Genetic resources of nicotine and smoking</title>
+</head>
+<body>
+<div class="container">
+	<div class="wrapper">
+        <div class="w2">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center"><img src="{% static 'images/head.jpg' %}" width="1000" height="180" alt="GRONS"/></td>
+                </tr>
+            </table>
+        </div>
+		<div class="heading">
+        	<div class="heading_nav">
+                <div class="heading_navbar">
+                    <ul>
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/browse/datasets">Datasets</a></li>
+                        <li><a href="search.php">Search</a></li>
+                        <li><a href="upload.php">Prioritizing Genes</a></li>
+                        <li><a href="/biofunction/biofunc">Biological Function</a></li>
+                        <li><a href="/version/contact">Summary</a></li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+        <div class="body">
+            {% block content %}
+            {% endblock %}
+        </div>
+	</div>
+    <div class="footing">
+        <table align="center" width="100%" border="0" cellpadding="10">
+            <tr>
+                <td height="30px" align="center"><p align="center" style="color:#000"><br/><b>Copyright </b><font style="font-size:20px" color="#000000">&copy;</font> 2017-Present, Tianjin Medical University, Bioinformatics Lab</p></td>
+            </tr>
+            <tr>
+                <td height="15px"></td>
+            </tr>
+        </table>
+        <div style="margin-top:2em">
+            <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5520dxvoy7u&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

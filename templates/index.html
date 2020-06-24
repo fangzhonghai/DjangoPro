@@ -1,54 +1,96 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
-<div class="version"><br/><h1>Welcome to GRONS</h1><br/>
-    <div class="image">
-        <p style="font-size:20px;line-height:30px" >Genetic Resources Of Nicotine and Smoking (GRONS) is a database devoted to provide a comprehensive and systematic collection of cross-platform genetic data on genes associated with the biological response to nicotine exposure and smoking related behaviors or diseases. By this database, we try to make such information easily accessible and interpretable for investigators in the smoking/nicotine addiction research community. </p>
-        <br/><p style="font-size:20px;line-height:30px" >GRONS deposits gene information obtained from different technology platforms that have been widely used in nicotine dependence or tobacco smoking studies. On the basis of available studies, we collected a comprehensive gene list from four major resources, i.e., <a href="browse.php?Source=Association">association</a>(genetic association study), <a href="browse.php?Source=Linkage">linkage</a>(linkage scan), <a href="browse.php?Source=Expression">expression</a> (gene/protein expression via high throughput technology), as well as <a href="browse.php?Source=Literature">literature search</a>. At present, GRONS deposits information of over 11000 genes identified from these approaches.</p><br/><p style="font-size:20px;line-height:30px" >Users can <a href="datasets.php">browse</a> or <a href="search.php">search</a> the database in different levels and get more useful biological function information from our comprehensive bioinformatics analysis result. Moreover, GRONS includes an online <a href="upload.php">gene prioritization tool</a>, for candidate gene selection and ranking based on evidence in multiple resources. </p>
-        <br/><br/>
-        <h3>More about tobacco smoking and nicotine addiction</h3>
-        <br/>
-        <table align="center" width="100%">
-            <tr>
-                <td width="50%"><div align="center"><img src="/static/images/smoking_death_USA.jpg" border="0" width="200" height="148"/></div></td>
-                <td width="50%"><div align="center"><img src="/static/images/Risks_of_smoking.png" border="0" width="200" height="148"/></div></td>
-            </tr>
-            <tr>
-                <td align="center">Tobacco smoking</td>
-                <td align="center">The molecular mechanisms <br />of nicotine addiction</td>
-            </tr>
-            <tr>
-                <td align="center"><input name="Read more" type="button" class="modalLink" value="Read more" href="#modal1"/></td><td align="center"><input name="Read more" type="button" class="haimodalLink" value="Read more" href="#modal11"/></td>
-            </tr>
-        </table>
-        <div class="overlay"></div>
-        <div id="modal1" class="modal">
-        <br /><br /><br />
-        <h2>About tobacco smoking</h2>
-        <br />
-		<p style="font-size:20px;line-height:30px" >Tobacco smoking is the most common form of tobacco use and the most significant sources of preventable morbidity and death worldwide. Smoking can harm nearly every organ of the body by causing various diseases, including cancer, heart disease, stroke, lung diseases, diabetes, and chronic obstructive pulmonary disease (COPD), and so on. Smoking also increases risk for tuberculosis, certain eye diseases, and problems of the immune system, including rheumatoid arthritis. According to the World Health Organization (WHO), with more than 1.2 billion smokers worldwide, smoking causes nearly 6 million deaths annually and was responsible for about 100 million deaths over the course of the 20th century. If the current trend continues, nearly 2 billion people will be smokers by 2030 and more than 10 million deaths will be caused by smoking related diseases per year.</p>
-        <br/>
-		<p style="font-size:20px;line-height:30px" >Despite these grim statistics, cigarette smoking continues to impose substantial health and financial costs in both developed and developing countries. According to the Centers for Disease Control and Prevention (CDC), in USA alone, more than 20% of adults are current smokers, and smoking is responsible for approximately 480,000 premature deaths. In USA, the economic burden caused by smoking, including both the direct health care expenditures and the loss of productivity, can be as high as $300 billion a year. In china, the prevalence of smoking remains high with 350 million smokers and more than 50% of the population is exposed to second-hand smoke. It is estimated that, by 2025, the annual number of deaths attributed to tobacco use in China will increase from 1.2 million to 2 million.</p>
-		<br/>
-		<p style="font-size:20px;line-height:30px" >Although many smokers try to quit, only a fraction of them succeed because smokers usually are addicted to nicotine, the main psychoactive ingredient in cigarettes. Thus, developing therapeutic approaches that can help smokers achieve and sustain abstinence from smoking, as well as methods that can prevent people, especially youths, from starting smoking, remain a huge challenge in public health.</P>
+<main role="main">
+    <div id="GronsIndex" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#GronsIndex" data-slide-to="0" class="active"></li>
+            <li data-target="#GronsIndex" data-slide-to="1"></li>
+            <li data-target="#GronsIndex" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+                <div class="container">
+                    <img src="{% static "images/head.jpg" %}" alt="head.jpg">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+                <div class="container">
+                <div class="carousel-caption text-left">
+                    <h1>Welcome to GRONS</h1>
+                    <p>Genetic Resources Of Nicotine and Smoking (GRONS) is a database devoted to provide a comprehensive and systematic collection of cross-platform genetic data on genes associated with the biological response to nicotine exposure and smoking related behaviors or diseases. By this database, we try to make such information easily accessible and interpretable for investigators in the smoking/nicotine addiction research community. </p>
+                </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+                <div class="container">
+                <div class="carousel-caption text-left">
+                    <p>Users can browse or search the database in different levels and get more useful biological function information from our comprehensive bioinformatics analysis result. Moreover, GRONS includes an online gene prioritization tool, for candidate gene selection and ranking based on evidence in multiple resources.</p>
+                </div>
+                </div>
+            </div>
         </div>
-	    <div id="modal11" class="haimodal">
-	    <br /><br /><br /><br />
-        <h2>The molecular mechanisms of nicotine addiction</h2>
-        <br/>
-		<p style="font-size:20px;line-height:30px">Smoking is a complex behavior that involves the interplay of genetic and environmental factors. As the main psychoactive ingredient responsible for smoking addiction, nicotine mainly evokes its physiological effects through interactions with nicotinic acetylcholine receptors (nAChRs) in the central nervous system. Nicotine exposure not only stimulates the dopamine system, but also modulates the release of neurotransmitters such as norepinephrine, serotonin, and GABA. Nicotine treatment can regulate the expression of genes/proteins involved in various functions directly or indirectly, and eventually is involved in the regulation of various physiological processes, such as learning and memory, angiogenesis, energy metabolism, synaptic function, response to oxidative stress, and addiction.</p>
-		<br/>
-		<p style="font-size:20px;line-height:30px" >Our understanding on the molecular mechanism underlying tobacco smoking is far from complete. Studies have indicated that for complex behaviors like smoking, the individual differences can be attributed to hundreds of genes and their variants. Genes involved in different biological functions may act in concert to account for the risk of vulnerability to smoking behavior, with each gene having a moderate effect.</p>
-		<br/>
-		<p style="font-size:20px;line-height:30px" >A lot of efforts have been devoted to identify the susceptibility genes and genetic markers underlying nicotine addiction via different approaches, among which include the techniques and experimental methods that focus on the function(s) or interaction(s) of one or a few genes/proteins, genetic association studies, linkage analysis, and high throughput expression studies. Via these approaches, many genes potentially related to the physiological response to nicotine exposure or smoking behaviors have been identified, but none of these methods are powerful enough to identify all the molecular targets related to nicotine addiction.</p>
-        </div>
-        <script type='text/javascript' src='/static/js/remote.js'></script>
-        <script type='text/javascript' src='/static/js/jquery.modal.js'></script>
-        <script type='text/javascript' src='/static/js/site.js'></script>
-	    <script type='text/javascript' src='/static/js/haijquery.modal.js'></script>
-	    <script type='text/javascript' src='/static/js/haisite.js'></script>
-        <br/><br/><br/><br/>
-	    <h3>Please email <a href="mailto:wangju@tmu.edu.cn">us</a> for any comment and suggestion.</h3>
-        <br/><br/>
+        <a class="carousel-control-prev" href="#GronsIndex" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#GronsIndex" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
     </div>
-</div>
+</main>
 {% endblock %}
+{#<div class="version"><br/><h1>Welcome to GRONS</h1><br/>#}
+{#    <div class="image">#}
+{#        <p style="font-size:20px;line-height:30px" >Genetic Resources Of Nicotine and Smoking (GRONS) is a database devoted to provide a comprehensive and systematic collection of cross-platform genetic data on genes associated with the biological response to nicotine exposure and smoking related behaviors or diseases. By this database, we try to make such information easily accessible and interpretable for investigators in the smoking/nicotine addiction research community. </p>#}
+{#        <br/><p style="font-size:20px;line-height:30px" >GRONS deposits gene information obtained from different technology platforms that have been widely used in nicotine dependence or tobacco smoking studies. On the basis of available studies, we collected a comprehensive gene list from four major resources, i.e., <a href="browse.php?Source=Association">association</a>(genetic association study), <a href="browse.php?Source=Linkage">linkage</a>(linkage scan), <a href="browse.php?Source=Expression">expression</a> (gene/protein expression via high throughput technology), as well as <a href="browse.php?Source=Literature">literature search</a>. At present, GRONS deposits information of over 11000 genes identified from these approaches.</p><br/><p style="font-size:20px;line-height:30px" >Users can <a href="datasets.php">browse</a> or <a href="search.php">search</a> the database in different levels and get more useful biological function information from our comprehensive bioinformatics analysis result. Moreover, GRONS includes an online <a href="upload.php">gene prioritization tool</a>, for candidate gene selection and ranking based on evidence in multiple resources. </p>#}
+{#        <br/><br/>#}
+{#        <h3>More about tobacco smoking and nicotine addiction</h3>#}
+{#        <br/>#}
+{#        <table align="center" width="100%">#}
+{#            <tr>#}
+{#                <td width="50%"><div align="center"><img src="/static/images/smoking_death_USA.jpg" border="0" width="200" height="148"/></div></td>#}
+{#                <td width="50%"><div align="center"><img src="/static/images/Risks_of_smoking.png" border="0" width="200" height="148"/></div></td>#}
+{#            </tr>#}
+{#            <tr>#}
+{#                <td align="center">Tobacco smoking</td>#}
+{#                <td align="center">The molecular mechanisms <br />of nicotine addiction</td>#}
+{#            </tr>#}
+{#            <tr>#}
+{#                <td align="center"><input name="Read more" type="button" class="modalLink" value="Read more" href="#modal1"/></td><td align="center"><input name="Read more" type="button" class="haimodalLink" value="Read more" href="#modal11"/></td>#}
+{#            </tr>#}
+{#        </table>#}
+{#        <div class="overlay"></div>#}
+{#        <div id="modal1" class="modal">#}
+{#        <br /><br /><br />#}
+{#        <h2>About tobacco smoking</h2>#}
+{#        <br />#}
+{#		<p style="font-size:20px;line-height:30px" >Tobacco smoking is the most common form of tobacco use and the most significant sources of preventable morbidity and death worldwide. Smoking can harm nearly every organ of the body by causing various diseases, including cancer, heart disease, stroke, lung diseases, diabetes, and chronic obstructive pulmonary disease (COPD), and so on. Smoking also increases risk for tuberculosis, certain eye diseases, and problems of the immune system, including rheumatoid arthritis. According to the World Health Organization (WHO), with more than 1.2 billion smokers worldwide, smoking causes nearly 6 million deaths annually and was responsible for about 100 million deaths over the course of the 20th century. If the current trend continues, nearly 2 billion people will be smokers by 2030 and more than 10 million deaths will be caused by smoking related diseases per year.</p>#}
+{#        <br/>#}
+{#		<p style="font-size:20px;line-height:30px" >Despite these grim statistics, cigarette smoking continues to impose substantial health and financial costs in both developed and developing countries. According to the Centers for Disease Control and Prevention (CDC), in USA alone, more than 20% of adults are current smokers, and smoking is responsible for approximately 480,000 premature deaths. In USA, the economic burden caused by smoking, including both the direct health care expenditures and the loss of productivity, can be as high as $300 billion a year. In china, the prevalence of smoking remains high with 350 million smokers and more than 50% of the population is exposed to second-hand smoke. It is estimated that, by 2025, the annual number of deaths attributed to tobacco use in China will increase from 1.2 million to 2 million.</p>#}
+{#		<br/>#}
+{#		<p style="font-size:20px;line-height:30px" >Although many smokers try to quit, only a fraction of them succeed because smokers usually are addicted to nicotine, the main psychoactive ingredient in cigarettes. Thus, developing therapeutic approaches that can help smokers achieve and sustain abstinence from smoking, as well as methods that can prevent people, especially youths, from starting smoking, remain a huge challenge in public health.</P>#}
+{#        </div>#}
+{#	    <div id="modal11" class="haimodal">#}
+{#	    <br /><br /><br /><br />#}
+{#        <h2>The molecular mechanisms of nicotine addiction</h2>#}
+{#        <br/>#}
+{#		<p style="font-size:20px;line-height:30px">Smoking is a complex behavior that involves the interplay of genetic and environmental factors. As the main psychoactive ingredient responsible for smoking addiction, nicotine mainly evokes its physiological effects through interactions with nicotinic acetylcholine receptors (nAChRs) in the central nervous system. Nicotine exposure not only stimulates the dopamine system, but also modulates the release of neurotransmitters such as norepinephrine, serotonin, and GABA. Nicotine treatment can regulate the expression of genes/proteins involved in various functions directly or indirectly, and eventually is involved in the regulation of various physiological processes, such as learning and memory, angiogenesis, energy metabolism, synaptic function, response to oxidative stress, and addiction.</p>#}
+{#		<br/>#}
+{#		<p style="font-size:20px;line-height:30px" >Our understanding on the molecular mechanism underlying tobacco smoking is far from complete. Studies have indicated that for complex behaviors like smoking, the individual differences can be attributed to hundreds of genes and their variants. Genes involved in different biological functions may act in concert to account for the risk of vulnerability to smoking behavior, with each gene having a moderate effect.</p>#}
+{#		<br/>#}
+{#		<p style="font-size:20px;line-height:30px" >A lot of efforts have been devoted to identify the susceptibility genes and genetic markers underlying nicotine addiction via different approaches, among which include the techniques and experimental methods that focus on the function(s) or interaction(s) of one or a few genes/proteins, genetic association studies, linkage analysis, and high throughput expression studies. Via these approaches, many genes potentially related to the physiological response to nicotine exposure or smoking behaviors have been identified, but none of these methods are powerful enough to identify all the molecular targets related to nicotine addiction.</p>#}
+{#        </div>#}
+{#        <script type='text/javascript' src='/static/js/remote.js'></script>#}
+{#        <script type='text/javascript' src='/static/js/jquery.modal.js'></script>#}
+{#        <script type='text/javascript' src='/static/js/site.js'></script>#}
+{#	    <script type='text/javascript' src='/static/js/haijquery.modal.js'></script>#}
+{#	    <script type='text/javascript' src='/static/js/haisite.js'></script>#}
+{#        <br/><br/><br/><br/>#}
+{#	    <h3>Please email <a href="mailto:wangju@tmu.edu.cn">us</a> for any comment and suggestion.</h3>#}
+{#        <br/><br/>#}
+{#    </div>#}
+{#</div>#}
+

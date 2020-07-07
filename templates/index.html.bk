@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<main role="main" class="container">
+  <div class="jumbotron">
+{#    <div id="GronsIndex" class="carousel slide" data-ride="carousel">#}
+{#        <ol class="carousel-indicators">#}
+{#            <li data-target="#GronsIndex" data-slide-to="0" class="active"></li>#}
+{#            <li data-target="#GronsIndex" data-slide-to="1"></li>#}
+{#            <li data-target="#GronsIndex" data-slide-to="2"></li>#}
+{#        </ol>#}
+{#        <div class="carousel-inner">#}
+{#            <div class="carousel-item active">#}
+{#                <div class="container">#}
+{#                    <div class="carousel-caption text-left">#}
+{#                        <br><br><br><br>#}
+                    <h1>Welcome to GRONS</h1>
+                    <p>Genetic Resources Of Nicotine and Smoking (GRONS) is a database devoted to provide a comprehensive and systematic collection of cross-platform genetic data on genes associated with the biological response to nicotine exposure and smoking related behaviors or diseases. By this database, we try to make such information easily accessible and interpretable for investigators in the smoking/nicotine addiction research community. </p>
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="carousel-item">#}
+{#                <div class="container">#}
+{#                <div class="carousel-caption text-left">#}
+{#                    <h1>Welcome to GRONS</h1>#}
+{#                    <p>Genetic Resources Of Nicotine and Smoking (GRONS) is a database devoted to provide a comprehensive and systematic collection of cross-platform genetic data on genes associated with the biological response to nicotine exposure and smoking related behaviors or diseases. By this database, we try to make such information easily accessible and interpretable for investigators in the smoking/nicotine addiction research community. </p>#}
+{#                </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="carousel-item">#}
+{#                <div class="container">#}
+{#                <div class="carousel-caption text-left">#}
+{#                    <p>Users can browse or search the database in different levels and get more useful biological function information from our comprehensive bioinformatics analysis result. Moreover, GRONS includes an online gene prioritization tool, for candidate gene selection and ranking based on evidence in multiple resources.</p>#}
+{#                </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <a class="carousel-control-prev" href="#GronsIndex" role="button" data-slide="prev">#}
+{#            <span class="carousel-control-prev-icon" aria-hidden="true"></span>#}
+{#            <span class="sr-only">Previous</span>#}
+{#        </a>#}
+{#        <a class="carousel-control-next" href="#GronsIndex" role="button" data-slide="next">#}
+{#            <span class="carousel-control-next-icon" aria-hidden="true"></span>#}
+{#            <span class="sr-only">Next</span>#}
+{#        </a>#}
+{#    </div>#}
+  </div>
+</main>
+{% endblock %}
+
+

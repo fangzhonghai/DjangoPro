@@ -9,16 +9,54 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <div class="card">
-                <img class="rounded" width="70%" src="{% static "images/smoking_death_USA.jpg" %}" alt="smoking_death_USA.jpg">
+{#                <div class="card">#}
+                <img class="rounded img-responsive center-block" width="70%" src="{% static "images/smoking_death_USA.jpg" %}" alt="smoking_death_USA.jpg">
                 <h3 class="text-center">Tobacco Smoking</h3>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#TobaccoSmoking">View details</button>
+{#                </div>#}
+                <div class="modal fade" id="TobaccoSmoking">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-success">About tobacco smoking</h4>
+                                <button type="button" class="close" data-dismiss="modal">&timesb;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p style="font-size:20px;line-height:30px">Tobacco smoking is the most common form of tobacco use and the most significant sources of preventable morbidity and death worldwide. Smoking can harm nearly every organ of the body by causing various diseases, including cancer, heart disease, stroke, lung diseases, diabetes, and chronic obstructive pulmonary disease (COPD), and so on. Smoking also increases risk for tuberculosis, certain eye diseases, and problems of the immune system, including rheumatoid arthritis. According to the World Health Organization (WHO), with more than 1.2 billion smokers worldwide, smoking causes nearly 6 million deaths annually and was responsible for about 100 million deaths over the course of the 20th century. If the current trend continues, nearly 2 billion people will be smokers by 2030 and more than 10 million deaths will be caused by smoking related diseases per year.</p>
+		                        <p style="font-size:20px;line-height:30px">Despite these grim statistics, cigarette smoking continues to impose substantial health and financial costs in both developed and developing countries. According to the Centers for Disease Control and Prevention (CDC), in USA alone, more than 20% of adults are current smokers, and smoking is responsible for approximately 480,000 premature deaths. In USA, the economic burden caused by smoking, including both the direct health care expenditures and the loss of productivity, can be as high as $300 billion a year. In china, the prevalence of smoking remains high with 350 million smokers and more than 50% of the population is exposed to second-hand smoke. It is estimated that, by 2025, the annual number of deaths attributed to tobacco use in China will increase from 1.2 million to 2 million.</p>
+		                        <p style="font-size:20px;line-height:30px">Although many smokers try to quit, only a fraction of them succeed because smokers usually are addicted to nicotine, the main psychoactive ingredient in cigarettes. Thus, developing therapeutic approaches that can help smokers achieve and sustain abstinence from smoking, as well as methods that can prevent people, especially youths, from starting smoking, remain a huge challenge in public health.</P>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-6">
-                <div class="card">
-                <img class="rounded" width="70%" src="{% static "images/Risks_of_smoking.png" %}" alt="Risks_of_smoking.png">
+{#                <div class="card">#}
+                <img class="rounded img-responsive center-block" width="70%" src="{% static "images/Risks_of_smoking.png" %}" alt="Risks_of_smoking.png">
                 <h3 class="text-center">Molecular Mechanisms of Nicotine Addiction</h3>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#MolecularMechanisms">View details</button>
+                <div class="modal fade" id="MolecularMechanisms">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-success">The molecular mechanisms of nicotine addiction</h4>
+                                <button type="button" class="close" data-dismiss="modal">&timesb;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p style="font-size:20px;line-height:30px">Smoking is a complex behavior that involves the interplay of genetic and environmental factors. As the main psychoactive ingredient responsible for smoking addiction, nicotine mainly evokes its physiological effects through interactions with nicotinic acetylcholine receptors (nAChRs) in the central nervous system. Nicotine exposure not only stimulates the dopamine system, but also modulates the release of neurotransmitters such as norepinephrine, serotonin, and GABA. Nicotine treatment can regulate the expression of genes/proteins involved in various functions directly or indirectly, and eventually is involved in the regulation of various physiological processes, such as learning and memory, angiogenesis, energy metabolism, synaptic function, response to oxidative stress, and addiction.</p>
+		                        <p style="font-size:20px;line-height:30px">Our understanding on the molecular mechanism underlying tobacco smoking is far from complete. Studies have indicated that for complex behaviors like smoking, the individual differences can be attributed to hundreds of genes and their variants. Genes involved in different biological functions may act in concert to account for the risk of vulnerability to smoking behavior, with each gene having a moderate effect.</p>
+		                        <p style="font-size:20px;line-height:30px">A lot of efforts have been devoted to identify the susceptibility genes and genetic markers underlying nicotine addiction via different approaches, among which include the techniques and experimental methods that focus on the function(s) or interaction(s) of one or a few genes/proteins, genetic association studies, linkage analysis, and high throughput expression studies. Via these approaches, many genes potentially related to the physiological response to nicotine exposure or smoking behaviors have been identified, but none of these methods are powerful enough to identify all the molecular targets related to nicotine addiction.</P>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+{#                </div>#}
             </div>
         </div>
     </div>
